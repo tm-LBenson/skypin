@@ -198,3 +198,8 @@ button {
   color: white;
   background: rgba(71, 132, 255, 0.9);
 }
+
+.app-drag-root {
+  width: 100vw;
+  height: 100vh;
+}
