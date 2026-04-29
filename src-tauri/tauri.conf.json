@@ -11,18 +11,18 @@
   },
   "app": {
     "windows": [
-     {
-       "label": "main",
-       "title": "SkyPin",
-       "width": 310,
-       "height": 190,
-       "decorations": false,
-       "resizable": false,
-       "transparent": true,
-       "alwaysOnTop": true,
-       "skipTaskbar": true,
-       "visible": true
-     }
+      {
+        "label": "main",
+        "title": "SkyPin",
+        "width": 310,
+        "height": 190,
+        "decorations": false,
+        "resizable": true,
+        "transparent": true,
+        "alwaysOnTop": true,
+        "skipTaskbar": true,
+        "visible": true
+      }
     ],
     "security": {
       "csp": null
