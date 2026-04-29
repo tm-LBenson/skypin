@@ -1,12 +1,13 @@
 use tauri::{
-    Manager,
     menu::{Menu, MenuItem},
     tray::{MouseButton, MouseButtonState, TrayIconBuilder, TrayIconEvent},
+    Manager,
 };
 
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
     tauri::Builder::default()
+        .plugin(tauri_plugin_opener::init())
         .setup(|app| {
             let show_item = MenuItem::with_id(app, "show", "Show", true, None::<&str>)?;
             let hide_item = MenuItem::with_id(app, "hide", "Hide", true, None::<&str>)?;
@@ -39,7 +40,8 @@ pub fn run() {
                         button: MouseButton::Left,
                         button_state: MouseButtonState::Up,
                         ..
-                    } = event {
+                    } = event
+                    {
                         if let Some(window) = tray.app_handle().get_webview_window("main") {
                             let _ = window.show();
                             let _ = window.set_focus();

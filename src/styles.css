@@ -203,3 +203,41 @@ button {
   width: 100vw;
   height: 100vh;
 }
+
+.settings-section {
+  display: grid;
+  gap: 6px;
+  padding: 10px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.settings-help-text,
+.settings-status {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.35;
+  opacity: 0.82;
+}
+
+.secondary-button {
+  padding: 8px;
+  color: white;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.secondary-button:disabled {
+  cursor: default;
+  opacity: 0.65;
+}
+
+.release-link {
+  color: white;
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.settings-button-row {
+  display: grid;
+  gap: 8px;
+}

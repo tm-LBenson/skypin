@@ -18,7 +18,7 @@ type Props = {
 const compactSize = new LogicalSize(310, 190);
 const hourlySize = new LogicalSize(340, 620);
 const weeklySize = new LogicalSize(380, 470);
-const settingsSize = new LogicalSize(430, 620);
+const settingsSize = new LogicalSize(430, 700);
 
 export function WeatherWidget({ settings, onSettingsChange }: Props) {
   const [isHourlyOpen, setIsHourlyOpen] = useState(false);
